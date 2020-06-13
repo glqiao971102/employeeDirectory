@@ -1,0 +1,107 @@
+
+header,main{
+margin: 30px;
+
+}
+
+h1{
+    font-size: 1.4em;
+}
+
+/* header */
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #search {
+        padding-right: 50px;
+        width: 25%;
+        height: 25px;
+    }
+
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+
+}
+
+/* grid */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    
+}
+
+
+/* Card session */
+.card{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.card:hover
+{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.text-container{
+    margin-left: 20px;
+    align-self: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/* .text-container */
+
+.name{
+    font-size: 1.1em;
+}
+
+.email,
+.address,
+.phone,
+.birthday{
+    font-size: 0.9em;
+    color: lightslategrey;
+}
+
+/* overlay */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4)
+    }
+    
+
+.modal {
+    width: 375px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    padding: 30px 20px;
+    }
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+    }
